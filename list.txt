@@ -1,3 +1,9 @@
 cred.php, cred.html, cred.py - exercise 6
 app.py - exercise 4
 ipvalid.py - exercise 2
+
+
+
+
+dumpcap -i Ethernet 2 -w capture_file.pcap
+tshark -r capture_file.pcap -Y "ssl"
