@@ -1,0 +1,29 @@
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+$ sudo apt install ansible
+
+Creating SSH Key
+$ ssh-keygen -t rsa -C "limsa default"
+$ ls -la .ssh
+$ cat .ssh/id_rsa.pub
+$ cat .ssh/id_rsa
+
+Copying ssh key to the server
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub "ipaddress"
+
+Test the new key
+$ ssh -i ~/.ssh/"keyname" "ipaddress"
+
+Connect to Server
+$ ssh "Ip address"
+
+
+Ansible command to connect with the machines provided in the inventory
+$ ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+
+Inventory Testing
+$ ansible all -i inventory -m ping
+
+Executing Playboks
+$ ansible-playbook -i inventory playbook.yml

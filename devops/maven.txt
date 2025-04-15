@@ -1,0 +1,31 @@
+Install extensions
+- git extension pack
+- ⁠spring boot extension pack
+- ⁠live server
+- ⁠java extension pack
+
+
+Create maven project
+	- >springboot project
+	- spring boot version 3.4.4
+	- group id
+	- artifact id
+	- package type
+	- java version
+	- dependencies
+		1) Lambok
+		2) Thymeleaf
+		3) Spring web web
+		4) Spring data JPA
+		5) My SQL JDBC Driver
+
+Create repo in git
+	- create new repo in github.com
+	- copy repo url
+	- connect local repo to git
+	- git init in the created folder
+	- git remote add origin <copied url>
+	- git push origin
+
+mvn compile
+mvn install
